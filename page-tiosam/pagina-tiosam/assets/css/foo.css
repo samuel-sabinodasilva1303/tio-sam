@@ -1,0 +1,163 @@
+footer{
+    width: 100%;
+    position: absolute;
+    margin-top: 60px;
+    background: linear-gradient(to right, #b8b7b7, #00093c);
+    color: #fff;
+    padding: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset 
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+.lgpd {
+    
+    position: fixed;
+    left: 50px;
+    right: 50px;
+    bottom: 20px;
+    padding: 20px;
+    background: var(--primary-color);
+    opacity: 0.8;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000000;
+  }
+  
+  .lgpd a {
+    color: var(--white-color);
+  }
+  
+  .lgpd button {
+    background-color:  var(--color-base);
+    color: var(--white-color);
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    padding: 15px 35px;
+  
+  }

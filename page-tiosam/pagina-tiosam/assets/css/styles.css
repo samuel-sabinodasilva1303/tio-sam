@@ -1,0 +1,285 @@
+
+.close-menu {
+  display: none;
+}
+
+/*Grid info*/
+.main-bg {
+  background-image: url('../img/tv.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+  height: 400px;
+}
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+
+.grid-one-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+
+.grid h3 {
+  font-size: 3rem;
+  position: center;
+
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--white-color);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transform: rotate(-90deg);
+  border: 0.1rem solid var(--primary-color);
+}
+
+/*carrosel*/
+#wrap{
+  position: relative;
+  left:0; top:0;
+  width:150%;
+  height:100%;
+  display:flex;
+  align-items: stretch;
+  margin: 0;
+  width: 100%;
+}
+.hb {
+  position: relative;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  transform: scale(.97);
+}
+.c{
+  position:relative;
+  display:block;
+  max-width:90%;
+  
+}
+.c img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 300px;
+
+}
+.hb:hover {
+  background-color: rgba(255,255,255,0.8);
+  opacity: 1;
+  transform: scaleY(1) translateY(0);
+}
+
+.hb:hover .header::after {
+ color: rgb(43, 28, 7);
+}
+
+
+.hb:hover + .fullBg {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+
+
+.h-custom{
+    height: 350px !important;
+}
+
+@media only screen and (max-width:550px){
+  .h-custom{
+      height: 150px !important;
+  } 
+  h1 {
+      color: var(--accent);
+      font-size:1.2em;
+      font-weight:700;
+      text-transform:uppercase;
+    }
+    .header::after{
+      position: absolute;
+      content: "Vetrina Carousel fullBg";
+      top: 10%;
+      left: 20%;
+      color: var(--accent);
+      font-size: 25px;
+  }
+}
+
+p{
+    color: var(--main);
+}
+
+.leaves{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:100%;
+background:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7));
+animation: animate 60s linear infinite;
+}
+
+@keyframes animate{
+from{background-position: 0px;}
+to{background-position: -5440px;}
+}
+/*fim*/
+
+@media (max-width: 800px) {
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%; 
+  }
+
+  .gallery-img img {
+    width: 100%;
+  }
+
+  .menu {
+    bottom: 0;
+    text-align: center;
+  }
+
+  .menu img {
+    height: 100px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .menu-content, .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-content {
+    height: 100vh;
+    background: linear-gradient(to right, #b8b7b7, #00093c);
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+
+  .close-menu-label::after {
+    content: '☰';
+    position: absolute;
+    z-index: 2;
+    top: 2.1rem;
+    right: 2.1rem;
+    background: var(--white-color);
+    color: var(--vermillion-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close-menu:checked~.menu {
+    display: block;
+  }
+
+  .close-menu:checked~.close-menu-label::after {
+    content: '×';
+  }
+
+  .menu-spacing {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+  }
+  .banner img {
+
+    margin-top: -30px;
+  }
+}
+
+/*Carrosel*/
+@media screen and ( max-width: 1400px ) {
+  .carousel-cell {
+      width: 100%;
+      height: 800px;
+      margin-right: 10px;
+  }
+  .floor-plan{
+      height: 800px !important;
+  }
+}
+@media screen and ( max-width: 1200px ) {
+  .carousel-cell {
+      width: 100%;
+      height: 700px;
+      margin-right: 10px;
+  }
+  .floor-plan{
+      height: 700px !important;
+  }
+}
+@media screen and ( max-width: 992px ) {
+  .carousel-cell {
+      width: 100%;
+      height: 600px;
+      margin-right: 10px;
+  }
+  .floor-plan{
+      height: 600px !important;
+  }
+}
+@media screen and ( max-width: 768px ) {
+  .carousel-cell {
+      width: 100%;
+      height: 500px;
+      margin-right: 10px;
+  }
+  .floor-plan{
+      height: 500px !important;
+  }
+}

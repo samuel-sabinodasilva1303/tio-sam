@@ -1,0 +1,123 @@
+
+  .title {
+    margin-top: 100px;
+    margin-bottom: 90px;
+    color: #6d708d;
+    text-align: center;
+  }
+  
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 30px
+  }
+  
+  .card__item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3em;
+    
+  }
+  
+  .card__item--highlight {
+    background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+    color: #fff;
+    padding: 4em 3em 4em 3em;
+  }
+  
+  .card__title {
+    margin: 0;
+  }
+  
+  .card__dollar {
+    font-size: calc(2 * 15px);
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .card__price {
+    font-size: calc(4 * 15px);
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .card__list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card__list li:first-child {
+    border-top: 1px solid rgba(179, 181, 198, 0.5);
+  }
+  
+  .card__list li {
+    border-bottom: 1px solid rgba(179, 181, 198, 0.5);
+    padding: 15px 0 15px 0;
+  }
+  
+  .card__btn {
+    border: none;
+    border-radius: calc(10px / 2);
+    padding: 1em;
+    width: 240px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #a3a8f0, #696fdd);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+  .card__btn:hover {
+    background: none;
+    border: 1px solid #6d708d;
+    color: #696fdd;
+  }
+  
+  .card__item--highlight .card__btn {
+    background: #fff;
+    color: #696fdd;
+  }
+  .card__item--highlight .card__btn:hover {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 1em 0 1em 0;
+    font-weight: 400;
+  }
+  
+  .attribution a {
+    color: #3e52a3;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .container {
+
+      background-size: auto 35%;
+    }
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card__item {
+      margin: 0 2em 0 2em;
+    }
+  
+    .card__item--highlight {
+      margin: 2em 0 2em 0;
+    }
+  }
+  

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tio Sam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Meta theme-->
+  <meta name="author" content="JSCode">
+  <meta name="copyright" content="JSCode">
+  <meta name="robots" content="FOLLOW,INDEX,ALL">
+  <meta name="description" content="Sua página vendas">
+  <meta name="keywords" content="canais, digital">
+  <meta property="og:url" content="">
+  <link rel="canonical" href="">
+  <meta property="og:description" content="Sua loja virtual">
+  <meta property="og:phone_number" content="(14) 9999-9999">
+  <meta property="og:street-address" content="Rua Dr. Luiz Miranda">
+  <meta property="og:locality" content="Pompéia">
+  <meta property="og:region" content="SP">
+  <meta property="og:email" content="teste@gamil.com">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+   <!--Inicio Google Tag Manager-->
+   <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;setTimeout(function(){f.parentNode.insertBefore(j,f)}, 1000);
+      })(window,document,'script','dataLayer','GTM-PJWMBRK');
+      
+      </script>
+      <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css' rel='stylesheet'/>
+      <link href='https://unpkg.com/flickity-fade@1/flickity-fade.css' rel='stylesheet'/>
+      <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css' rel='stylesheet'/>
+      <link href='https://unpkg.com/flickity@2/dist/flickity.min.css' rel='stylesheet'/>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="./lib/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/foo.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/sass/style.scss">
+  <link rel="stylesheet" href="assets/css/preco.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style.css.map">
+
+  <link rel="icon" type="image/x-icon" href="assets/img/logo-Tio-Sam-Play-300x300.ico">
+</head>
+
+<body>
+<section>
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home"><img src="https://tiosamplay.com.br/wp-content/uploads/2022/09/Logo-Tio-Sam-Play-300x300.png" ></a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#preco">Preço</a></li>
+          <li><a href="#grid-two">Informações</a></li>
+          <li><a href="#carrosel">Canais</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+</section>
+
+  <section id="home" class="intro main-bg section">
+    <div class=" intro-content">
+      <div class="intro-text-content">
+        <div class="banner">
+          <a><img src="assets/img/banner-home.jpg"></a>
+        <h2>O melhor da televisão</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--Preço-->
+
+  <section onload="refresh()">
+    <main id="preco" class="container">
+      <h1 class="title">Nossos Preço</h1>
+
+      <div class="card">
+        <div class="card__item">
+          <h3 class="card__title">Básico</h3>
+          <p  class="card__price"><span class="card__dollar">&dollar;</span>19.99</p>
+          <ul class="card__list">
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </ul>
+          <button type="button" class="card__btn">Saiba Mais</button>
+        </div>
+
+        <div class="card__item card__item--highlight">
+          <h3 class="card__title">Profissional</h3>
+          <p  class="card__price"><span class="card__dollar">&dollar;</span>24.99</p>
+          <ul class="card__list">
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </ul>
+          <button type="button" class="card__btn">Saiba Mais</button>
+        </div>
+
+        <div class="card__item">
+          <h3 class="card__title">Master</h3>
+          <p class="card__price"><span class="card__dollar">&dollar;</span>39.99</p>
+          <ul class="card__list">
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </ul>
+          <button type="button" class="card__btn">Learn More</button>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--Informaçõe sobre a TV-->
+  
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">My Grid</h2>
+
+
+      <div class="grid">
+        <article>
+          <h3>Teste 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+            nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+            provident maiores.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+            nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+            provident maiores.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus
+            nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores
+            provident maiores.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!--carrosel-->
+
+  <section>
+    <div id="carrosel" class="container">
+      <div class="row align-items-center">
+        <div class="leaves"></div>
+        <div class="col-12 text-center">
+          <h1>
+            Seus filmes e séries favoritos
+          </h1>
+            <div id="wrap">
+                <a href="#" class="hb">
+                  <div class="c">
+                 <img class="h-custom" src="./assets/img/banner-home.jpg" alt=""/>
+                  </div>
+                </a>
+
+                <a href="#" class="hb">
+                  <div class="c">
+                    <img class="h-custom" src="./assets/img/banner-home.jpg" alt=""/>
+                  </div>
+                </a>
+                <a href="#" class="hb">
+                  <div class="c">
+                    <img class="h-custom" src="./assets/img/banner-home.jpg" alt=""/>
+                  </div>
+                </a>
+
+                <a href="#" class="hb">
+                  <div class="c">
+                    <img class="h-custom" src="./assets/img/banner-home.jpg" alt=""/>
+                  </div>
+                </a>
+
+                <a href="#" class="hb">
+                  <div class="c">
+                    <img class="h-custom" src="./assets/img/banner-home.jpg" alt=""/>
+                  </div>
+                </a>
+              </div>
+             
+        </div>
+      </div>
+    </div>
+</section>
+  <!--Contato-->
+
+
+  <footer id="contact">
+    <div class="row">
+        <div class="col">
+            <img src="https://tiosamplay.com.br/wp-content/uploads/2022/09/Logo-Tio-Sam-Play-300x300.png" class="logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex unde iste sapiente eum porro nemo omnis eius quo totam officiis quis, perferendis maiores ullam quas id rerum minus! Ab.</p>
+        </div>
+        <div class="col">
+            <h3>teste </h3>
+            <p>Lorem</p>
+            <p>Rua teste, Brasil</p>
+            <p>São Paulo, CEP 17580, teste</p>
+            <p class="email-id">teste@gmail.com</p>
+            <h4>(14) 89999-99</h4>
+        </div>
+        <div class="col">
+            <h3>Links </h3>
+            <ul>
+          
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter </h3>
+            <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Entre com seu e-mail:" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+          
+            </div>
+        </div>
+    </div>
+    <hr>
+        <a class="copyright">&copy; Desenvolvido por JSCODE</a>
+  </footer>
+
+
+
+  <a class="back-to-top" href="#">➤</a>
+  <script type="text/javascript" src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="/lib/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+<script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

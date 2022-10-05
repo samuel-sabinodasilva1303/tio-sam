@@ -1,0 +1,231 @@
+/* Colors */
+$linear-gradient: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+$light-linear-gradient: hsl(236, 72%, 89%), hsl(237, 63%, 77%);
+$very-light-grayish-blue: hsl(240, 78%, 98%);
+$light-grayish-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+$light: #fff;
+$shadow: rgba($light-grayish-blue, 0.3) 0 0 20px;
+
+/* Typography */
+$font-size: 15px;
+$family: "Montserrat", sans-serif;
+$bold: 700;
+
+/* Layout */
+$bg-top: url("../../../images/bg-top.svg");
+$bg-bottom: url("../../../images/bg-bottom.svg");
+$radius: 10px;
+$line: 1px solid rgba($light-grayish-blue, 0.5);
+
+body {
+  margin: 0;
+  font-family: $family;
+  font-size: $font-size;
+  text-align: center;
+  color: $dark-grayish-blue;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  background: $bg-top no-repeat right top, $bg-bottom no-repeat left bottom;
+  background-size: auto 75%, auto 35%;
+  background-color: $very-light-grayish-blue;
+  height: 100%;
+  font-weight: $bold;
+  padding: 2em;
+}
+
+.title {
+  margin-top: 1em;
+  color: $grayish-blue;
+}
+
+.switch {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: $light-grayish-blue;
+  margin-bottom: 3em;
+}
+
+.switch__option__left {
+  text-align: right;
+  margin-right: 1em;
+}
+
+.switch__option__right {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.switch__label {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  justify-self: center;
+}
+
+.switch__input {
+  visibility: hidden;
+}
+
+.switch__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, $linear-gradient);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switch__slider:before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: $light;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch__input:checked + .switch__slider {
+  background: linear-gradient(to right, $light-linear-gradient);
+}
+
+.switch__input:focus + .switch__slider {
+  box-shadow: 0 0 1px hsl(236, 72%, 79%);
+}
+
+.switch__input:checked + .switch__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.card__item {
+  background-color: $light;
+  border-radius: $radius;
+  padding: 3em;
+  box-shadow: $shadow;
+}
+
+.card__item--highlight {
+  background: linear-gradient(to bottom right, $linear-gradient);
+  color: $light;
+  padding: 4em 3em 4em 3em;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__dollar {
+  font-size: calc(2 * #{$font-size});
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.card__price {
+  font-size: calc(4 * #{$font-size});
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+}
+
+.card__list li:first-child {
+  border-top: $line;
+}
+
+.card__list li {
+  border-bottom: $line;
+  padding: 15px 0 15px 0;
+}
+
+.card__btn {
+  border: none;
+  border-radius: calc(#{$radius} / 2);
+  padding: 1em;
+  width: 240px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $linear-gradient);
+  color: $light;
+  font-weight: $bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: none;
+    border: 1px solid $grayish-blue;
+    color: hsl(237, 63%, 64%);
+  }
+}
+
+.card__item--highlight .card__btn {
+  background: $light;
+  color: hsl(237, 63%, 64%);
+
+  &:hover {
+    background: none;
+    border: 1px solid $light;
+    color: $light;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  margin: 1em 0 1em 0;
+  font-weight: 400;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    background: $bg-top no-repeat right top;
+    background-size: auto 35%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__item {
+    margin: 0 2em 0 2em;
+  }
+
+  .card__item--highlight {
+    margin: 2em 0 2em 0;
+  }
+}
